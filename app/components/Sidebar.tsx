@@ -32,11 +32,18 @@ export default function Sidebar({}: Props) {
       {!mobileWidth && (
         <div className="absolute right-[-20px] top-7">
           <Button
+          asChild
             onClick={toggleSidebar}
             variant="secondary"
             className=" rounded-full p-2"
           >
+            <div>
+
+
             <ChevronRight />
+            </div>
+
+
           </Button>
         </div>
       )}
